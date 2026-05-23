@@ -127,66 +127,77 @@
 <!-- WhatsApp Integration -->
 
 <!-- Header / TopNavBar -->
-<header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md border-b border-outline-variant shadow-sm transition-all duration-300" id="main-header">
-<div class="flex justify-between items-center w-full h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-<a class="font-headline-md text-headline-md text-primary text-xl tracking-tighter uppercase m-0" href="#">SUCCESSEPACIOS ZIPAQUIRÁ</a>
-<nav class="hidden lg:flex items-center gap-8">
-<a class="font-label-md text-label-md uppercase tracking-widest text-secondary border-b-2 border-secondary pb-1 cursor-pointer" href="#proyecto">PROYECTO</a>
-<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer" href="#ubicacion">UBICACIÓN</a>
-<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer" href="#disponibles">DISPONIBLES</a>
-<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer" href="#plantas">PLANTAS</a>
-<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer" href="#galeria">GALERÍA</a>
-<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer" href="#contacto">CONTACTO</a>
-</nav>
-<button class="bg-primary text-on-primary font-label-md px-6 py-3 tracking-widest hover:shadow-[0_0_15px_rgba(119,90,25,0.4)] transition-all duration-300 uppercase" onclick="document.getElementById('contact-form').scrollIntoView({behavior: 'smooth'})">SOLICITAR BROCHURE</button>
-</div>
+<header class="fixed top-0 w-full z-50 navbar-ios border-1 border transition-all duration-300" id="main-header">
+    <div class="flex justify-between items-center w-full h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+        
+        <a href="#" class="font-display text-xl md:text-xl tracking-tighter text-primary font-semibold">
+            SUCCESSEPACIOS <span class="text-secondary-fixed">ZIPAQUIRÁ</span>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-10 text-sm font-medium">
+            <a class="relative font-medium text-gray-700 hover:text-primary transition-colors duration-300 cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left" href="#proyecto">PROYECTO</a>
+            <a class="relative font-medium text-gray-700 hover:text-primary transition-colors duration-300 cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left" href="#ubicacion">UBICACIÓN</a>
+            <a class="relative font-medium text-gray-700 hover:text-primary transition-colors duration-300 cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left" href="#disponibles">DISPONIBLES</a>
+            <a class="relative font-medium text-gray-700 hover:text-primary transition-colors duration-300 cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left" href="#plantas">PLANTAS</a>
+            <a class="relative font-medium text-gray-700 hover:text-primary transition-colors duration-300 cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left" href="#galeria">GALERÍA</a>
+            <a class="relative font-medium text-gray-700 hover:text-primary transition-colors duration-300 cursor-pointer after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-full after:h-[2px] after:bg-primary after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:origin-left" href="#hero">CONTACTO</a>
+        </nav>
+
+        <button onclick="document.getElementById('contact-form').scrollIntoView({behavior: 'smooth'})" 
+                class="btn-ios px-8 py-3.5 rounded-2xl text-sm font-semibold tracking-widest uppercase">
+            SOLICITAR BROCHURE
+        </button>
+
+    </div>
 </header>
 <main class="pt-20">
 <!-- Hero Section -->
 <section class="relative min-h-[90vh] flex items-center overflow-hidden" id="hero">
-<div class="absolute inset-0 z-0">
-<img alt="SUCCESSEPACIOS Zipaquirá" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1LbLwBv_BgIIOdB3UNHqeSEwWRSg6WJj8uMswf-2ZSJAutWH3pKP5dkbEtkab9BXfxSeZAwqnXJsv1CNVPHOFujRoVKc3ySYXC6YSeVWmKXC-93en6IlAxLRf6l99wwv0YuFlN-7wS0CmyWpzhHgip4hjpyNRp_G9UpJUuqAIu5jxcFmkPv9O_Vk8UOBhOayxyHx5YHKxxbB5460QhhEJQff1-amOH7Kps_Zrm6gDfMlePUwnEcUxaaJyA7BIbonZLtIpPgxapok"/>
-<div class="absolute inset-0 hero-gradient"></div>
-</div>
-<div class="relative z-10 w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid lg:grid-cols-2 gap-12 items-center">
-<div class="text-on-primary">
-<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6 leading-tight">Haz crecer tu negocio en el mejor punto comercial de Zipaquirá</h1>
-<p class="font-body-lg text-body-lg mb-8 text-surface-variant max-w-lg">Exclusividad y alta valorización en el corazón de la ciudad. Carrera 10, el epicentro del crecimiento empresarial.</p>
-<div class="flex flex-wrap gap-4">
-<button class="bg-secondary-container text-on-secondary-container font-label-md px-8 py-4 tracking-widest hover:bg-secondary-fixed transition-colors duration-300 uppercase" onclick="document.getElementById('contact-form').scrollIntoView({behavior: 'smooth'})">SOLICITAR INFORMACIÓN</button>
-</div>
-</div>
-<!-- Floating Form -->
-<div class="bg-white p-8 md:p-10 shadow-2xl border-t-2 border-secondary relative reveal-on-scroll" id="contact-form">
-<h3 class="font-headline-md text-primary mb-6">Inicia tu inversión</h3>
-<form class="space-y-4">
-<div>
-<label class="block font-label-sm text-primary mb-1 uppercase">Nombre Completo</label>
-<input class="w-full border-outline-variant focus:border-primary focus:ring-0 px-4 py-3 bg-surface" placeholder="Escribe tu nombre" type="text"/>
-</div>
-<div class="grid grid-cols-2 gap-4">
-<div>
-<label class="block font-label-sm text-primary mb-1 uppercase">Teléfono</label>
-<input class="w-full border-outline-variant focus:border-primary focus:ring-0 px-4 py-3 bg-surface" placeholder="Celular" type="tel"/>
-</div>
-<div>
-<label class="block font-label-sm text-primary mb-1 uppercase">Email</label>
-<input class="w-full border-outline-variant focus:border-primary focus:ring-0 px-4 py-3 bg-surface" placeholder="Tu correo" type="email"/>
-</div>
-</div>
-<div>
-<label class="block font-label-sm text-primary mb-1 uppercase">Tipo de Interés</label>
-<select class="w-full border-outline-variant focus:border-primary focus:ring-0 px-4 py-3 bg-surface">
-<option>Local Comercial</option>
-<option>Zona de Comidas</option>
-<option>Oficina / Servicios</option>
-<option>Inversión</option>
-</select>
-</div>
-<button class="w-full bg-primary text-on-primary font-label-md py-4 tracking-widest hover:bg-primary-container transition-colors duration-300 uppercase mt-4" type="submit">ENVIAR SOLICITUD</button>
-</form>
-</div>
-</div>
+  <div class="absolute inset-0 z-0">
+    <img alt="SUCCESSEPACIOS Zipaquirá" class="w-full h-full object-cover hidden md:block" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1LbLwBv_BgIIOdB3UNHqeSEwWRSg6WJj8uMswf-2ZSJAutWH3pKP5dkbEtkab9BXfxSeZAwqnXJsv1CNVPHOFujRoVKc3ySYXC6YSeVWmKXC-93en6IlAxLRf6l99wwv0YuFlN-7wS0CmyWpzhHgip4hjpyNRp_G9UpJUuqAIu5jxcFmkPv9O_Vk8UOBhOayxyHx5YHKxxbB5460QhhEJQff1-amOH7Kps_Zrm6gDfMlePUwnEcUxaaJyA7BIbonZLtIpPgxapok"/>
+    
+    <img alt="SUCCESSEPACIOS Zipaquirá Móvil" class="w-full h-full object-cover block md:hidden" src="/imagenes/zipaquira-movil.jpg"/>
+    
+    <div class="absolute inset-0 hero-gradient"></div>
+  </div>
+  <div class="relative z-10 w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid lg:grid-cols-2 gap-12 items-center">
+    <div class="text-on-primary ">
+      <h1 class="mt-10 font-display-lg text-display-lg-mobile md:text-display-lg mb-6 leading-tight">Haz crecer tu negocio en el mejor punto comercial de Zipaquirá</h1>
+      <p class="font-body-lg text-body-lg mb-8 text-surface-variant max-w-lg">Exclusividad y alta valorización en el corazón de la ciudad. Carrera 10, el epicentro del crecimiento empresarial.</p>
+      <div class="flex flex-wrap gap-4">
+        <button class="bg-secondary-container text-on-secondary-container font-label-md px-8 py-4 tracking-widest hover:bg-secondary-fixed transition-colors duration-300 uppercase" onclick="document.getElementById('contact-form').scrollIntoView({behavior: 'smooth'})">SOLICITAR INFORMACIÓN</button>
+      </div>
+    </div>
+    <div class=" my-10 md:mt-0 bg-white/70  p-8 md:p-10 shadow-2xl border-t-2 border-secondary relative reveal-on-scroll" id="contact-form">
+      <h3 class="font-headline-md text-primary mb-6">Inicia tu inversión</h3>
+      <form class="space-y-4">
+        <div>
+          <label class="block font-label-sm text-primary mb-1 uppercase">Nombre Completo</label>
+          <input class="w-full border-outline-variant focus:border-primary focus:ring-0 px-4 py-3 bg-surface" placeholder="Escribe tu nombre" type="text"/>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label class="block font-label-sm text-primary mb-1 uppercase">Teléfono</label>
+            <input class="w-full border-outline-variant focus:border-primary focus:ring-0 px-4 py-3 bg-surface" placeholder="Celular" type="tel"/>
+          </div>
+          <div>
+            <label class="block font-label-sm text-primary mb-1 uppercase">Email</label>
+            <input class="w-full border-outline-variant focus:border-primary focus:ring-0 px-4 py-3 bg-surface" placeholder="Tu correo" type="email"/>
+          </div>
+        </div>
+        <div>
+          <label class="block font-label-sm text-primary mb-1 uppercase">Tipo de Interés</label>
+          <select class="w-full border-outline-variant focus:border-primary focus:ring-0 px-4 py-3 bg-surface">
+            <option>Local Comercial</option>
+            <option>Zona de Comidas</option>
+            <option>Oficina / Servicios</option>
+            <option>Inversión</option>
+          </select>
+        </div>
+        <button class="w-full bg-primary text-on-primary font-label-md py-4 tracking-widest hover:bg-primary-container transition-colors duration-300 uppercase mt-4" type="submit">ENVIAR SOLICITUD</button>
+      </form>
+    </div>
+  </div>
 </section>
 <!-- About Section -->
 <section class="py-24 bg-surface" id="proyecto">
@@ -477,7 +488,7 @@
 </nav>
 </div>
 <div class="mt-16 pt-8 border-t border-primary-container text-center text-on-primary-fixed-variant text-sm">
-<p>© 2024 SUCCESSEPACIOS Zipaquira. Todos los derechos reservados. Desarrollo de Lujo S.A.</p>
+<p>© 2026 SUCCESSEPACIOS Zipaquira. Todos los derechos reservados. Desarrollo de Lujo S.A.</p>
 </div>
 </div>
 </footer>
@@ -505,11 +516,13 @@
             header.classList.remove('h-40');
             header.classList.add('h-26');
             header.classList.add('bg-white/95');
+            header.classList.add('pb-20');
         } else {
             header.classList.remove('py-2');
             header.classList.add('h-20');
             header.classList.remove('h-16');
             header.classList.remove('bg-white/95');
+            
         }
     });
 </script>
