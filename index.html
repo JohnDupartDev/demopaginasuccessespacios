@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SUCCESSEPACIOS ZIPAQUIRÁ | Exclusividad Comercial</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#2e3132",
+                        "on-error": "#ffffff",
+                        "surface-variant": "#e1e2e4",
+                        "on-error-container": "#93000a",
+                        "on-background": "#191c1e",
+                        "on-primary-fixed": "#0f1c30",
+                        "primary-fixed": "#d6e3fe",
+                        "outline-variant": "#c5c6cd",
+                        "primary-fixed-dim": "#bac7e1",
+                        "on-primary": "#ffffff",
+                        "secondary-fixed-dim": "#e9c176",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "surface-container-low": "#f3f4f6",
+                        "surface-dim": "#d9dadc",
+                        "surface-bright": "#f8f9fb",
+                        "on-primary-container": "#7a879f",
+                        "inverse-primary": "#bac7e1",
+                        "tertiary-container": "#281d08",
+                        "surface-container-highest": "#e1e2e4",
+                        "on-tertiary-fixed-variant": "#52452c",
+                        "tertiary-fixed-dim": "#d7c4a4",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#191c1e",
+                        "on-tertiary-container": "#958467",
+                        "surface-container-high": "#e7e8ea",
+                        "on-primary-fixed-variant": "#cccccc",
+                        "tertiary": "#0a0500",
+                        "error": "#ba1a1a",
+                        "error-container": "#ffdad6",
+                        "primary": "#000614",
+                        "on-tertiary": "#ffffff",
+                        "surface": "#f8f9fb",
+                        "on-surface-variant": "#44474d",
+                        "secondary-container": "#fed488",
+                        "secondary": "#775a19",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-on-surface": "#f0f1f3",
+                        "outline": "#75777d",
+                        "secondary-fixed": "#ffdea5",
+                        "background": "#f8f9fb",
+                        "on-secondary-container": "#785a1a",
+                        "primary-container": "#121f33",
+                        "surface-container": "#edeef0",
+                        "on-secondary-fixed": "#261900",
+                        "on-tertiary-fixed": "#241a06",
+                        "surface-tint": "#525f76",
+                        "tertiary-fixed": "#f4e0be",
+                        "whatsapp": "#25D366"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "margin-tablet": "40px",
+                        "container-max": "1280px",
+                        "margin-desktop": "80px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Playfair Display"],
+                        "body-md": ["Montserrat"],
+                        "display-lg": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "headline-lg": ["Playfair Display"],
+                        "label-md": ["Montserrat"],
+                        "label-sm": ["Montserrat"],
+                        "body-lg": ["Montserrat"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["40px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg": ["64px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .hero-gradient {
+            background: linear-gradient(to right, rgba(0, 6, 20, 0.9) 0%, rgba(0, 6, 20, 0.4) 50%, rgba(0, 6, 20, 0.1) 100%);
+        }
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .whatsapp-float:hover .whatsapp-tooltip {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+<!-- WhatsApp Integration -->
+
+<!-- Header / TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-surface/95 backdrop-blur-md border-b border-outline-variant shadow-sm transition-all duration-300" id="main-header">
+<div class="flex justify-between items-center w-full h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md text-primary text-xl tracking-tighter uppercase m-0" href="#">SUCCESSEPACIOS ZIPAQUIRÁ</a>
+<nav class="hidden lg:flex items-center gap-8">
+<a class="font-label-md text-label-md uppercase tracking-widest text-secondary border-b-2 border-secondary pb-1 cursor-pointer" href="#proyecto">PROYECTO</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer" href="#ubicacion">UBICACIÓN</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer" href="#disponibles">DISPONIBLES</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer" href="#plantas">PLANTAS</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer" href="#galeria">GALERÍA</a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface-variant hover:text-secondary transition-colors duration-300 cursor-pointer" href="#contacto">CONTACTO</a>
+</nav>
+<button class="bg-primary text-on-primary font-label-md px-6 py-3 tracking-widest hover:shadow-[0_0_15px_rgba(119,90,25,0.4)] transition-all duration-300 uppercase" onclick="document.getElementById('contact-form').scrollIntoView({behavior: 'smooth'})">SOLICITAR BROCHURE</button>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex items-center overflow-hidden" id="hero">
+<div class="absolute inset-0 z-0">
+<img alt="SUCCESSEPACIOS Zipaquirá" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1LbLwBv_BgIIOdB3UNHqeSEwWRSg6WJj8uMswf-2ZSJAutWH3pKP5dkbEtkab9BXfxSeZAwqnXJsv1CNVPHOFujRoVKc3ySYXC6YSeVWmKXC-93en6IlAxLRf6l99wwv0YuFlN-7wS0CmyWpzhHgip4hjpyNRp_G9UpJUuqAIu5jxcFmkPv9O_Vk8UOBhOayxyHx5YHKxxbB5460QhhEJQff1-amOH7Kps_Zrm6gDfMlePUwnEcUxaaJyA7BIbonZLtIpPgxapok"/>
+<div class="absolute inset-0 hero-gradient"></div>
+</div>
+<div class="relative z-10 w-full px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto grid lg:grid-cols-2 gap-12 items-center">
+<div class="text-on-primary">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6 leading-tight">Haz crecer tu negocio en el mejor punto comercial de Zipaquirá</h1>
+<p class="font-body-lg text-body-lg mb-8 text-surface-variant max-w-lg">Exclusividad y alta valorización en el corazón de la ciudad. Carrera 10, el epicentro del crecimiento empresarial.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-secondary-container text-on-secondary-container font-label-md px-8 py-4 tracking-widest hover:bg-secondary-fixed transition-colors duration-300 uppercase" onclick="document.getElementById('contact-form').scrollIntoView({behavior: 'smooth'})">SOLICITAR INFORMACIÓN</button>
+</div>
+</div>
+<!-- Floating Form -->
+<div class="bg-white p-8 md:p-10 shadow-2xl border-t-2 border-secondary relative reveal-on-scroll" id="contact-form">
+<h3 class="font-headline-md text-primary mb-6">Inicia tu inversión</h3>
+<form class="space-y-4">
+<div>
+<label class="block font-label-sm text-primary mb-1 uppercase">Nombre Completo</label>
+<input class="w-full border-outline-variant focus:border-primary focus:ring-0 px-4 py-3 bg-surface" placeholder="Escribe tu nombre" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block font-label-sm text-primary mb-1 uppercase">Teléfono</label>
+<input class="w-full border-outline-variant focus:border-primary focus:ring-0 px-4 py-3 bg-surface" placeholder="Celular" type="tel"/>
+</div>
+<div>
+<label class="block font-label-sm text-primary mb-1 uppercase">Email</label>
+<input class="w-full border-outline-variant focus:border-primary focus:ring-0 px-4 py-3 bg-surface" placeholder="Tu correo" type="email"/>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-primary mb-1 uppercase">Tipo de Interés</label>
+<select class="w-full border-outline-variant focus:border-primary focus:ring-0 px-4 py-3 bg-surface">
+<option>Local Comercial</option>
+<option>Zona de Comidas</option>
+<option>Oficina / Servicios</option>
+<option>Inversión</option>
+</select>
+</div>
+<button class="w-full bg-primary text-on-primary font-label-md py-4 tracking-widest hover:bg-primary-container transition-colors duration-300 uppercase mt-4" type="submit">ENVIAR SOLICITUD</button>
+</form>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-24 bg-surface" id="proyecto">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid lg:grid-cols-2 gap-20 items-center">
+<div class="reveal-on-scroll">
+<span class="text-secondary font-label-md tracking-widest uppercase mb-4 block">El Proyecto</span>
+<h2 class="font-headline-lg text-primary mb-8 leading-tight">Arquitectura moderna diseñada para el éxito comercial</h2>
+<div class="space-y-6 text-on-surface-variant font-body-lg">
+<p>Altura Zipaquirá es una edificación de vanguardia de 4 niveles, concebida para integrar la dinámica urbana con la sofisticación empresarial. Ubicado estratégicamente en la Carrera 10, garantiza la máxima visibilidad para su marca.</p>
+<p>Nuestro diseño prioriza la funcionalidad, con amplios espacios comunes y una infraestructura técnica de primer nivel que asegura la operatividad y el crecimiento de su negocio en el mercado más competitivo de la zona.</p>
+</div>
+<div class="grid grid-cols-2 gap-8 mt-12">
+<div>
+<div class="text-secondary font-headline-lg mb-2">4</div>
+<div class="font-label-sm uppercase tracking-widest">Niveles de Comercio</div>
+</div>
+<div>
+<div class="text-secondary font-headline-lg mb-2">High</div>
+<div class="font-label-sm uppercase tracking-widest">Flujo Peatonal</div>
+</div>
+</div>
+</div>
+<div class="relative reveal-on-scroll">
+<div class="absolute -top-4 -left-4 w-24 h-24 bg-secondary-fixed/30 -z-10"></div>
+<img class="w-full h-[600px] object-cover shadow-xl border border-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAToPw_lT56-1peqOqs3AAwoZji4hFj5Vqi9_h7O4wcIlyoUm9dE4_Na1bMDx1OnViIbWvnr0Zs3KZ8GRKPHacqIpPSqrBdIBordY3_DvzzYBHo7tWzOOrqT_PuC1J5dIupMlxD5Nz9HQTbsPxjJwSdyQeQStaM6_k1U2Alxhd0xyRzp6-c0cHAkWWJ5stu3vkeIAwrtIgkjmWiLuSPL8ThaD7kmPDKXtf4w1NW3aQa0eaxjxnLmoCNctsHuMe1DiTYA9ITx5wk8W8"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Locales Disponibles Section -->
+<section class="py-24 bg-white" id="disponibles">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16 reveal-on-scroll">
+<span class="text-secondary font-label-md tracking-widest uppercase mb-4 block">Oportunidades de Inversión</span>
+<h2 class="font-headline-lg text-primary">Locales Comerciales Disponibles</h2>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 reveal-on-scroll">
+<!-- Local 1 -->
+<div class="border border-outline-variant group hover:border-secondary transition-all duration-300">
+<div class="h-64 overflow-hidden relative">
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] uppercase tracking-widest px-3 py-1 z-10">Primer Piso</div>
+<img alt="Local 101" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9Lz06eo-BUYIK_aJqVwKEt6VocOliOHa7vv_5-ao2VUgzZwRGhiiBEhoAHC6JYXdBU3HO32L0NiNGpiTAafTKRZs0_zwBjECVyk4KsTGwMDaFLnOcWVoAXVTDpvSYFRyG0XGimiYG1XPrZB2028TUrR5dYhK3vhTetkU-sn-o18SSK4gkYPB_7R2U40NkMvYU7eekN8phBCPdYdebi9ubS2SDay2ad_hYEDiFW_c8KzjfTgtHIv7Tj4EyHqEKhK1_hz_fP_Ss8nc"/>
+</div>
+<div class="p-8">
+<h4 class="font-headline-md text-primary mb-2 uppercase">Local 101</h4>
+<div class="flex items-center gap-4 text-on-surface-variant mb-6 font-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">square_foot</span> 45m²</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">visibility</span> Vitrina Principal</span>
+</div>
+<button class="w-full border border-primary text-primary font-label-md py-3 tracking-widest hover:bg-primary hover:text-white transition-all duration-300 uppercase">Ver detalles</button>
+</div>
+</div>
+<!-- Local 2 -->
+<div class="border border-outline-variant group hover:border-secondary transition-all duration-300">
+<div class="h-64 overflow-hidden relative">
+<div class="absolute top-4 left-4 bg-primary text-white text-[10px] uppercase tracking-widest px-3 py-1 z-10">Segundo Piso</div>
+<img alt="Local 204" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmMMpA6qkZ6tj1xCafR5ydvRc4WAU2ER6A9Zi3Xr3VDsLoiYJptTyFBNyZZnNM-DlaQBmN7HkjQFfW9d5rSliGotbrNANPO1xeVuaCtQpLBHLkrsQKrtrYSQHDX4StDqF2AqUfSaYStkIpwPCxYKo_KYhWHpbzXhTt-DaCRwDy0PM1tMzNcrkd2tp_i_y_ZdqB2ZuaZCAP4lGtqG5r0D-i3wL_PPTsnU3UtgmijzZPXUpk9KDoGig1bP7CX3eWE4yRgsbemIOHWog"/>
+</div>
+<div class="p-8">
+<h4 class="font-headline-md text-primary mb-2 uppercase">Local 204</h4>
+<div class="flex items-center gap-4 text-on-surface-variant mb-6 font-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">square_foot</span> 120m²</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">corporate_fare</span> Corporativo</span>
+</div>
+<button class="w-full border border-primary text-primary font-label-md py-3 tracking-widest hover:bg-primary hover:text-white transition-all duration-300 uppercase">Ver detalles</button>
+</div>
+</div>
+<!-- Local 3 -->
+<div class="border border-outline-variant group hover:border-secondary transition-all duration-300">
+<div class="h-64 overflow-hidden relative">
+<div class="absolute top-4 left-4 bg-secondary text-white text-[10px] uppercase tracking-widest px-3 py-1 z-10">Food Court</div>
+<img alt="Local 402" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEKZbS0Bgj_CWaCYUTmKTrhpXEiwqzwBB6sDtEF8l6WOQ_Ua_r_3o2tajiz_kldMC9MmkCzEMWwgNrZPIojsyxXB7uwyrZNdaMkWjEJO9wYHpWataFH33tWfrk_roN_6GFDql5_gVrNAq84esR5Je5i7fjKCnuTiULmCO2mASz7NJvON5jU4KH-dewOm21TRXFFx3CyuAA77DvHAacThNu4QAbXLY-SHgd2UfziQnfYI-46Q3QOact_YeTrehG7Qs4ZW-wEey9mxs"/>
+</div>
+<div class="p-8">
+<h4 class="font-headline-md text-primary mb-2 uppercase">Local 402</h4>
+<div class="flex items-center gap-4 text-on-surface-variant mb-6 font-label-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">square_foot</span> 85m²</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">restaurant</span> Gastronómico</span>
+</div>
+<button class="w-full border border-primary text-primary font-label-md py-3 tracking-widest hover:bg-primary hover:text-white transition-all duration-300 uppercase">Ver detalles</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Floor Distribution -->
+<section class="py-24 bg-surface-container-low overflow-hidden" id="plantas">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-20 reveal-on-scroll">
+<span class="text-secondary font-label-md tracking-widest uppercase mb-4 block">Distribución Inteligente</span>
+<h2 class="font-headline-lg text-primary">Un Nivel para Cada Necesidad</h2>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4 reveal-on-scroll">
+<!-- Floor 1 -->
+<div class="group border border-outline-variant p-8 bg-white hover:bg-primary hover:text-on-primary transition-all duration-500 cursor-default">
+<div class="text-secondary font-headline-md mb-4 group-hover:text-secondary-fixed">Nivel 01</div>
+<h4 class="font-headline-md mb-4">Servicios &amp; Parking</h4>
+<p class="text-on-surface-variant group-hover:text-surface-variant font-body-md mb-6">Zona de parqueaderos cubiertos y área técnica para pagos y servicios rápidos.</p>
+<div class="border-t border-outline-variant pt-4 group-hover:border-primary-container">
+<span class="material-symbols-outlined text-secondary align-middle mr-2">local_parking</span>
+<span class="font-label-sm uppercase tracking-wider">Acceso Vehicular</span>
+</div>
+</div>
+<!-- Floor 2 -->
+<div class="group border border-outline-variant p-8 bg-white hover:bg-primary hover:text-on-primary transition-all duration-500 cursor-default">
+<div class="text-secondary font-headline-md mb-4 group-hover:text-secondary-fixed">Nivel 02</div>
+<h4 class="font-headline-md mb-4">Retail Exclusive</h4>
+<p class="text-on-surface-variant group-hover:text-surface-variant font-body-md mb-6">3 locales comerciales de gran formato con vitrinas a doble altura y alta visibilidad.</p>
+<div class="border-t border-outline-variant pt-4 group-hover:border-primary-container">
+<span class="material-symbols-outlined text-secondary align-middle mr-2">shopping_bag</span>
+<span class="font-label-sm uppercase tracking-wider">Flujo Peatonal</span>
+</div>
+</div>
+<!-- Floor 3 -->
+<div class="group border border-outline-variant p-8 bg-white hover:bg-primary hover:text-on-primary transition-all duration-500 cursor-default">
+<div class="text-secondary font-headline-md mb-4 group-hover:text-secondary-fixed">Nivel 03</div>
+<h4 class="font-headline-md mb-4">Negocios &amp; Salud</h4>
+<p class="text-on-surface-variant group-hover:text-surface-variant font-body-md mb-6">2 amplios locales ideales para servicios especializados o sedes corporativas.</p>
+<div class="border-t border-outline-variant pt-4 group-hover:border-primary-container">
+<span class="material-symbols-outlined text-secondary align-middle mr-2">business_center</span>
+<span class="font-label-sm uppercase tracking-wider">Espacios Flexibles</span>
+</div>
+</div>
+<!-- Floor 4 -->
+<div class="group border border-outline-variant p-8 bg-white hover:bg-primary hover:text-on-primary transition-all duration-500 cursor-default">
+<div class="text-secondary font-headline-md mb-4 group-hover:text-secondary-fixed">Nivel 04</div>
+<h4 class="font-headline-md mb-4">Gastro &amp; Social</h4>
+<p class="text-on-surface-variant group-hover:text-surface-variant font-body-md mb-6">Zona de comidas (Food Court) con terraza panorámica y espacios sociales.</p>
+<div class="border-t border-outline-variant pt-4 group-hover:border-primary-container">
+<span class="material-symbols-outlined text-secondary align-middle mr-2">restaurant</span>
+<span class="font-label-sm uppercase tracking-wider">Sky Lounge</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Features Bento -->
+<section class="py-24 bg-white" id="ubicacion">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="grid lg:grid-cols-3 gap-8">
+<div class="lg:col-span-2 reveal-on-scroll">
+<div class="bg-surface-container-low p-12 border border-outline-variant h-full relative overflow-hidden group">
+<span class="text-secondary font-label-md tracking-widest uppercase mb-4 block">Ubicación Estratégica</span>
+<h2 class="font-headline-lg text-primary mb-8">El corazón de la Carrera 10</h2>
+<p class="font-body-lg text-on-surface-variant mb-12 max-w-md">Estar en el punto más dinámico de Zipaquirá no es solo prestigio, es rentabilidad asegurada por el alto tráfico constante.</p>
+<div class="grid sm:grid-cols-2 gap-8">
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<h5 class="font-label-md uppercase tracking-wide mb-1">Carrera 10</h5>
+<p class="text-sm text-on-surface-variant">Dirección de alta valorización.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-12 h-12 bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined">trending_up</span>
+</div>
+<div>
+<h5 class="font-label-md uppercase tracking-wide mb-1">Potencial Comercial</h5>
+<p class="text-sm text-on-surface-variant">Crecimiento anual sostenido.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="reveal-on-scroll" style="transition-delay: 200ms;">
+<div class="bg-primary p-12 text-on-primary h-full">
+<span class="text-secondary-fixed font-label-md tracking-widest uppercase mb-4 block">Valor Agregado</span>
+<ul class="space-y-8">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary-fixed">check_circle</span>
+<p class="font-body-md">Grandes zonas comunes con acabados de lujo.</p>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary-fixed">check_circle</span>
+<p class="font-body-md">Seguridad privada y monitoreo 24/7.</p>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary-fixed">check_circle</span>
+<p class="font-body-md">Accesibilidad total para personas con movilidad reducida.</p>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-secondary-fixed">check_circle</span>
+<p class="font-body-md">Diseño bioclimático para ahorro energético.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Mapa de Ubicación -->
+<section class="reveal-on-scroll">
+<div class="w-full h-[500px] bg-surface-variant relative grayscale hover:grayscale-0 transition-all duration-1000 overflow-hidden">
+<!-- Stylized placeholder for Map -->
+<iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15897.456789012!2d-74.00!3d5.02!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e401086088f188d%3A0xc00f28e21c60f252!2sZipaquir%C3%A1%2C%20Cundinamarca!5e0!3m2!1ses!2sco!4v1700000000000!5m2!1ses!2sco" style="border:0;" width="100%">
+</iframe>
+<div class="absolute top-8 left-8 md:left-20 bg-white p-8 shadow-2xl max-w-sm border-t-4 border-secondary pointer-events-none">
+<h4 class="font-headline-md text-primary mb-2">Visítanos</h4>
+<p class="text-on-surface-variant font-body-md mb-4">Estamos ubicados en el epicentro comercial de la Carrera 10, Zipaquirá.</p>
+<div class="flex items-center gap-2 text-secondary font-label-sm uppercase tracking-widest">
+<span class="material-symbols-outlined">directions</span> Cómo llegar
+                </div>
+</div>
+</div>
+</section>
+<!-- Gallery / Renders Project -->
+<section class="py-24 bg-primary text-on-primary" id="galeria">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 reveal-on-scroll">
+<div>
+<span class="text-secondary-fixed font-label-md tracking-widest uppercase mb-4 block">Portafolio Arquitectónico</span>
+<h2 class="font-headline-lg">Galería de Diseño &amp; Acabados</h2>
+</div>
+<div class="mt-4 md:mt-0">
+<p class="text-surface-variant max-w-xs font-body-md">Cada detalle ha sido diseñado para proyectar la exclusividad que su marca merece.</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-4 h-auto md:h-[800px] reveal-on-scroll">
+<!-- Large Main Item -->
+<div class="md:col-span-8 md:row-span-2 overflow-hidden relative group">
+<img alt="Fachada Principal Nocturna" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1LbLwBv_BgIIOdB3UNHqeSEwWRSg6WJj8uMswf-2ZSJAutWH3pKP5dkbEtkab9BXfxSeZAwqnXJsv1CNVPHOFujRoVKc3ySYXC6YSeVWmKXC-93en6IlAxLRf6l99wwv0YuFlN-7wS0CmyWpzhHgip4hjpyNRp_G9UpJUuqAIu5jxcFmkPv9O_Vk8UOBhOayxyHx5YHKxxbB5460QhhEJQff1-amOH7Kps_Zrm6gDfMlePUwnEcUxaaJyA7BIbonZLtIpPgxapok"/>
+<div class="absolute bottom-0 left-0 w-full p-8 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+<span class="font-label-sm text-secondary-fixed uppercase tracking-widest">Exterior</span>
+<h4 class="font-headline-md text-white">Fachada de Vanguardia en la Carrera 10</h4>
+</div>
+</div>
+<!-- Small Item 1 -->
+<div class="md:col-span-4 overflow-hidden relative group">
+<img alt="Detalle Arquitectónico" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmMMpA6qkZ6tj1xCafR5ydvRc4WAU2ER6A9Zi3Xr3VDsLoiYJptTyFBNyZZnNM-DlaQBmN7HkjQFfW9d5rSliGotbrNANPO1xeVuaCtQpLBHLkrsQKrtrYSQHDX4StDqF2AqUfSaYStkIpwPCxYKo_KYhWHpbzXhTt-DaCRwDy0PM1tMzNcrkd2tp_i_y_ZdqB2ZuaZCAP4lGtqG5r0D-i3wL_PPTsnU3UtgmijzZPXUpk9KDoGig1bP7CX3eWE4yRgsbemIOHWog"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
+<p class="font-label-sm text-white uppercase tracking-widest">Materiales Premium</p>
+</div>
+</div>
+<!-- Small Item 2 -->
+<div class="md:col-span-4 overflow-hidden relative group">
+<img alt="Interiores" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9Lz06eo-BUYIK_aJqVwKEt6VocOliOHa7vv_5-ao2VUgzZwRGhiiBEhoAHC6JYXdBU3HO32L0NiNGpiTAafTKRZs0_zwBjECVyk4KsTGwMDaFLnOcWVoAXVTDpvSYFRyG0XGimiYG1XPrZB2028TUrR5dYhK3vhTetkU-sn-o18SSK4gkYPB_7R2U40NkMvYU7eekN8phBCPdYdebi9ubS2SDay2ad_hYEDiFW_c8KzjfTgtHIv7Tj4EyHqEKhK1_hz_fP_Ss8nc"/>
+<div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
+<p class="font-label-sm text-white uppercase tracking-widest">Espacios de Doble Altura</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4 reveal-on-scroll">
+<div class="h-80 overflow-hidden relative group">
+<img alt="Gastro Zone" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEKZbS0Bgj_CWaCYUTmKTrhpXEiwqzwBB6sDtEF8l6WOQ_Ua_r_3o2tajiz_kldMC9MmkCzEMWwgNrZPIojsyxXB7uwyrZNdaMkWjEJO9wYHpWataFH33tWfrk_roN_6GFDql5_gVrNAq84esR5Je5i7fjKCnuTiULmCO2mASz7NJvON5jU4KH-dewOm21TRXFFx3CyuAA77DvHAacThNu4QAbXLY-SHgd2UfziQnfYI-46Q3QOact_YeTrehG7Qs4ZW-wEey9mxs"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/60 to-transparent p-12 flex flex-col justify-center">
+<span class="text-secondary-fixed font-label-md uppercase tracking-widest mb-2">Food Court</span>
+<h4 class="font-headline-md text-white mb-4">Experiencia Gastronómica</h4>
+<p class="text-surface-variant max-w-sm">Ambientes sofisticados para el encuentro social y de negocios.</p>
+</div>
+</div>
+<div class="bg-surface-container-highest p-12 flex flex-col justify-center border border-outline-variant text-primary">
+<h4 class="font-headline-lg mb-4 text-primary">Visión de Inversión</h4>
+<p class="font-body-lg text-on-surface-variant mb-8">Nuestra arquitectura no solo busca ser estética, sino potenciar el ROI de cada local mediante un diseño que invita al recorrido y permanencia.</p>
+<button class="self-start border-b-2 border-primary font-label-md py-2 tracking-widest uppercase hover:text-secondary hover:border-secondary transition-all">Ver Brochure Completo</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-32 relative overflow-hidden bg-white">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-surface-container-low -skew-x-12 translate-x-1/2 -z-0"></div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative z-10 text-center">
+<h2 class="font-display-lg text-display-lg-mobile md:text-headline-lg mb-8 text-primary">Tu espacio comercial te espera.<br/>Separa tu local hoy.</h2>
+<div class="flex flex-col sm:flex-row justify-center gap-6">
+<button class="bg-primary text-on-primary font-label-md px-12 py-5 tracking-widest hover:shadow-xl transition-all duration-300 uppercase" onclick="document.getElementById('contact-form').scrollIntoView({behavior: 'smooth'})">CONTACTAR ASESOR</button>
+<button class="border border-secondary text-secondary font-label-md px-12 py-5 tracking-widest hover:bg-secondary hover:text-white transition-all duration-300 uppercase">DESCARGAR BROCHURE</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-on-primary py-16 border-t border-primary-container">
+<div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-center gap-12">
+<div class="text-center md:text-left">
+<h2 class="font-headline-lg text-secondary-fixed mb-4 uppercase">SUCCESSEPACIOS ZIPAQUIRÁ</h2>
+<p class="text-on-primary-fixed-variant max-w-sm">Elevando el estándar comercial en Zipaquirá. Desarrollo de Lujo S.A.</p>
+</div>
+<nav class="flex flex-wrap justify-center gap-8">
+<a class="text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors" href="#">Privacidad</a>
+<a class="text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors" href="#">Términos</a>
+<a class="text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors" href="#">Inversionistas</a>
+<a class="text-on-primary-fixed-variant hover:text-secondary-fixed transition-colors" href="#">Sostenibilidad</a>
+</nav>
+</div>
+<div class="mt-16 pt-8 border-t border-primary-container text-center text-on-primary-fixed-variant text-sm">
+<p>© 2024 SUCCESSEPACIOS Zipaquira. Todos los derechos reservados. Desarrollo de Lujo S.A.</p>
+</div>
+</div>
+</footer>
+<script>
+    // Scroll reveal animation
+    const observerOptions = {
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+
+    // Header transparency on scroll
+    window.addEventListener('scroll', () => {
+        const header = document.getElementById('main-header');
+        if (window.scrollY > 50) {
+            header.classList.add('py-2');
+            header.classList.remove('h-40');
+            header.classList.add('h-26');
+            header.classList.add('bg-white/95');
+        } else {
+            header.classList.remove('py-2');
+            header.classList.add('h-20');
+            header.classList.remove('h-16');
+            header.classList.remove('bg-white/95');
+        }
+    });
+</script>
+</body></html>
